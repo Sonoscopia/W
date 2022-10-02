@@ -16,3 +16,16 @@
 - MIDI input via XLR (see PHOBOS repository) 
 - MIDI out/thru via XLR 
 - power in/out(thru) via micro sockets (see PHOBOS repository) 
+
+### VGA CONNECTIONS
+
+- 4, 5, 6, 7, 8, 11: GND
+- 1: R1
+- 2: R2
+- 3: R3
+- 9: R4
+- 10: R5
+- 12: R6
+- 13: R7
+- 14: R8
+- 15: +5V
