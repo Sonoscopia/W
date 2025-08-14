@@ -5,7 +5,7 @@
  * code by Tiago Ângelo (www.tiagoangelo.net)
 */
 
-#include <MIDI.h>
+//#include <MIDI.h>
 #define MIDICH 1
 #define START 96
 #define SIZE 8
@@ -37,11 +37,11 @@ byte pitch;
 byte butstate[SIZE], _butstate[SIZE];
 byte buttons[SIZE] = {B1, B2, B3, B4, B5, B6, B7, B8};
 
-MIDI_CREATE_DEFAULT_INSTANCE();
+//MIDI_CREATE_DEFAULT_INSTANCE();
 
 void setup() {
-  MIDI.begin(MIDICH);
-  MIDI.turnThruOn();
+  //MIDI.begin(MIDICH);
+  //MIDI.turnThruOn();
 
   //set input pins
   pinMode(B1, INPUT_PULLUP);
@@ -85,6 +85,7 @@ void setup() {
 
 void loop() {
  // MIDI CONTROL 
+ /*
  if(MIDI.read()){
       switch(MIDI.getType()){
         case midi::NoteOn:
@@ -102,6 +103,7 @@ void loop() {
         break;
       }
   } 
+   */
   
   // BUTTON CONTROL
   for(int i = 0; i < SIZE; i++){
